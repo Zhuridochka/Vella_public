@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CatalogPage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20251028103505">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="102" data-scroll-show="1000" class="header">
+			<div class="header__container">
+				<button type="button" class="header__icon icon-menu"><span></span></button>
+				<a href="home.html#page__hero" class="header__logo logo"><img src="img/updated_logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="catalog.html#catalog" class="menu__link">
+									Catalog
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="collaboration.html#collaboration" class="menu__link">
+									Partners
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="design.html#design" class="menu__link">
+									Designers
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="about.html#about" class="menu__link">
+									About Us
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="schemes.html#schemes" class="menu__link">
+									Assembly scheme
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html#contacts" class="menu__link">
+									Contacts
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contact contact-header">
+					<a href="tel:+380955770304" class="contact-header__link">
+						<p>+380 95 577 03 04</p>
+						<span class="contact-header__icon">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#tablet"></use>
+							</svg>
+						</span>
+					</a>
+					<button data-popup="#popup" type="button" class="contact-header__button button button--trprnt">Become a dealer</button>
+				</div>
+			</div>
+		</header>
+		<main class="catalog">
+			<div class="catalog__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Home</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Catalog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="catalog__goods goods">
+				<div class="goods__container">
+					<h1 class="goods__title title title--middle">Catalog</h1>
+					<div class="goods__body">
+						<div class="goods__navigation navigation-buttons">
+							<div class="navigation-buttons__sorting sorting-button">
+								<button type="button" class="sorting-button__body">
+									<span class="sorting-button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#switch"></use>
+										</svg>
+									</span>
+									<span class="sorting-button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#across"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="sorting-button__title">Sort</div>
+							</div>
+							<div class="navigation-buttons__filter filter-button">
+								<button type="button" class="filter-button__body">
+									<span class="filter-button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#sliders"></use>
+										</svg>
+									</span>
+									<span class="filter-button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#across"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="filter-button__title">Filter</div>
+							</div>
+						</div>
+						<aside class="goods__filter filter">
+							<div class="filter__body">
+								<form class="filter__form form-filter" action="https://jkorpela.fi/cgi-bin/echo.cgi" data-netlify="true">
+									<div data-spollers class="form-filter__spollers form-filter__spollers--catalog spollers">
+										<details data-open class="spollers__item spollers__item--catalog">
+											<summary class="spollers__title spollers__title--catalog">Price, ₴</summary>
+											<div class="spollers__body spollers__body--catalog filter-price">
+												<div class="filter-price__range"></div>
+												<div class="filter-price__box">
+													<div class="filter-price__from">
+														<span>from</span>
+														<span>₴</span>
+														<input data-to id="price-start" type="text" class="filter-price__input filter-price__input--from">
+													</div>
+													<div class="filter-price__to">
+														<span>from</span>
+														<span>₴</span>
+														<input data-to id="price-end" type="text" class="filter-price__input filter-price__input--to">
+													</div>
+												</div>
+											</div>
+										</details>
+
+										<details data-open class="spollers__item spollers__item--catalog">
+											<summary class="spollers__title spollers__title--catalog">Ready -made solutions</summary>
+											<div class="spollers__body spollers__body--catalog filter-choice">
+												<div class="filter-choice__checkbox checkbox">
+													<input id="s_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[solutions]">
+													<label for="s_1" class="checkbox__label">
+														<span class="checkbox__text">For the office
+														</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="s_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="2" name="form[solutions]">
+													<label for="s_2" class="checkbox__label"><span class="checkbox__text">Living rooms</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="s_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="3" name="form[solutions]">
+													<label for="s_3" class="checkbox__label"><span class="checkbox__text">Bedrooms</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="s_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="4" name="form[solutions]">
+													<label for="s_4" class="checkbox__label"><span class="checkbox__text">Children's</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="s_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="5" name="form[solutions]">
+													<label for="s_5" class="checkbox__label"><span class="checkbox__text">Halls</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+											</div>
+										</details>
+
+										<details data-open class="spollers__item spollers__item--catalog">
+											<summary class="spollers__title spollers__title--catalog">Category</summary>
+											<div class="spollers__body spollers__body--catalog filter-choice">
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[category]">
+													<label for="c_1" class="checkbox__label">
+														<span class="checkbox__text">Hangers
+														</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input checked id="c_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="2" name="form[category]">
+													<label for="c_2" class="checkbox__label"><span class="checkbox__text">Tables</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+
+													<!--Вкладені checkbox-->
+													<div class="filter-choice__nested">
+														<div class="filter-choice__checkbox checkbox">
+															<input id="n_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+															<label for="n_1" class="checkbox__label"><span class="checkbox__text">Written</span>
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#check"></use>
+																</svg>
+															</label>
+														</div>
+														<div class="filter-choice__checkbox checkbox">
+															<input id="n_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+															<label for="n_2" class="checkbox__label"><span class="checkbox__text">Dining</span>
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#check"></use>
+																</svg>
+															</label>
+														</div>
+														<div class="filter-choice__checkbox checkbox">
+															<input id="n_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="3" name="form[]">
+															<label for="n_3" class="checkbox__label"><span class="checkbox__text">Journal</span>
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#check"></use>
+																</svg>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="3" name="form[category]">
+													<label for="c_3" class="checkbox__label"><span class="checkbox__text">Goslots</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="4" name="form[category]">
+													<label for="c_4" class="checkbox__label"><span class="checkbox__text">Tumbs</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="5" name="form[category]">
+													<label for="c_5" class="checkbox__label"><span class="checkbox__text">Shelves</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_6" data-error="Помилка" class="checkbox__input" type="checkbox" value="6" name="form[category]">
+													<label for="c_6" class="checkbox__label">
+														<span class="checkbox__text">Cabinets</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_7" data-error="Помилка" class="checkbox__input" type="checkbox" value="7" name="form[category]">
+													<label for="c_7" class="checkbox__label"><span class="checkbox__text">Chairs</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_8" data-error="Помилка" class="checkbox__input" type="checkbox" value="8" name="form[category]">
+													<label for="c_8" class="checkbox__label"><span class="checkbox__text">Shoe shoes</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_9" data-error="Помилка" class="checkbox__input" type="checkbox" value="9" name="form[category]">
+													<label for="c_9" class="checkbox__label"><span class="checkbox__text">Storage boxes</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_10" data-error="Помилка" class="checkbox__input" type="checkbox" value="10" name="form[category]">
+													<label for="c_10" class="checkbox__label"><span class="checkbox__text">Shelves</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="c_11" data-error="Помилка" class="checkbox__input" type="checkbox" value="11" name="form[category]">
+													<label for="c_11" class="checkbox__label"><span class="checkbox__text">Mattresses</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+											</div>
+										</details>
+
+										<details data-open class="spollers__item spollers__item--catalog">
+											<summary class="spollers__title spollers__title--catalog">Color</summary>
+											<div class="spollers__body spollers__body--catalog filter-choice">
+												<div class="filter-choice__checkbox checkbox">
+													<input id="col_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[color]">
+													<label for="col_1" class="checkbox__label">
+														<span class="checkbox__text">white</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="col_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="2" name="form[color]">
+													<label for="col_2" class="checkbox__label"><span class="checkbox__text">black</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="col_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="3" name="form[color]">
+													<label for="col_3" class="checkbox__label"><span class="checkbox__text">walnut</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="col_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="4" name="form[color]">
+													<label for="col_4" class="checkbox__label"><span class="checkbox__text">grey</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="col_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="5" name="form[color]">
+													<label for="col_5" class="checkbox__label"><span class="checkbox__text">oak</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+												<div class="filter-choice__checkbox checkbox">
+													<input id="col_6" data-error="Помилка" class="checkbox__input" type="checkbox" value="6" name="form[color]">
+													<label for="col_6" class="checkbox__label"><span class="checkbox__text">dub sonoma</span>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#check"></use>
+														</svg>
+													</label>
+												</div>
+											</div>
+										</details>
+									</div>
+								</form>
+							</div>
+						</aside>
+						<div class="goods__box">
+							<div class="goods__sorting sorting">
+								<select class="sorting__select-popular" name="form[popular]" data-class-modif="form">
+									<option value="1" selected>Popular</option>
+									<option value="2">From cheap to expensive</option>
+									<option value="3">From expensive to cheap</option>
+									<option value="4">Sale</option>
+								</select>
+								<select class="sorting__select-picture" name="form[picture]" data-class-modif="form">
+									<option value="1" selected>Show 10 photos</option>
+									<option value="2">Show 20 photos</option>
+									<option value="3">Show 30 photos</option>
+									<option value="4">Show 40 photos</option>
+								</select>
+							</div>
+							<div data-showmore class="goods__content content-goods">
+								<div data-showmore-content="410" class="content-goods__items">
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_01.webp" alt="Image">
+										</a>
+										<h5 class="item-catalog__title">Cabinet dresser <Span> vella </span> frame Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+										<div class="item-catalog__price">5 610 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_02.webp" alt="Image 02">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span> vella </span> city 3 boxes</h5>
+										<div class="item-catalog__price">6 570 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_03.webp" alt="Image 03">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span> vella </span> city universal</h5>
+										<div class="item-catalog__price">12 500 ₴ </div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_04.webp" alt="Image 04">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span> vella </span> city 3 boxes</h5>
+										<div class="item-catalog__price">5 610 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_05.webp" alt="Image 05">
+										</a>
+										<h5 class="item-catalog__title">Frequent <span> vella </span> Boston 4 boxes</h5>
+										<div class="item-catalog__price">8 110 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_06.webp" alt="Image 06">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span> vella </span> city 4 boxes</h5>
+										<div class="item-catalog__price">9 120 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_07.webp" alt="Image 07">
+										</a>
+										<h5 class="item-catalog__title">Ко scran <pn>let</span> Nealleette</h5>
+										<div class="item-catalog__price">11 420 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_08.webp" alt="Image 08">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span> vella</span> frame 3 boxes with shelves</h5>
+										<div class="item-catalog__price">7 356 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_09.webp" alt="Image 09">
+										</a>
+										<h5 class="item-catalog__title">Frequent <span> vella</span> loft New 5 door with boxes</h5>
+										<div class="item-catalog__price">8 720 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_10.webp" alt="Image 10">
+										</a>
+										<h5 class="item-catalog__title">The curbstone is covered <span>vella</span> Tokyo</h5>
+										<div class="item-catalog__price">8 850 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_11.webp" alt="Image 11">
+										</a>
+										<h5 class="item-catalog__title">Losmod Tumba<span>vella</span> Frame</h5>
+										<div class="item-catalog__price">8 850 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_12.webp" alt="Image 12">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span>vella</span> new 5 door with boxes</h5>
+										<div class="item-catalog__price">8 720 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_13.webp" alt="Image 13">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span>vella</span> estetika 3 door with boxes</h5>
+										<div class="item-catalog__price">10 470 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_14.webp" alt="Image 14">
+										</a>
+										<h5 class="item-catalog__title">Losmod Tumba <span>vella</span> Fram</h5>
+										<div class="item-catalog__price">8 850 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_15.webp" alt="Image 15">
+										</a>
+										<h5 class="item-catalog__title">Loskod <span>vella</span> city 5 cement boxes</h5>
+										<div class="item-catalog__price">8 720 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_01.webp" alt="Image">
+										</a>
+										<h5 class="item-catalog__title">Cabinet dresser <span>vella</span> Frame</h5>
+										<div class="item-catalog__price">5 610 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_01.webp" alt="Image">
+										</a>
+										<h5 class="item-catalog__title">Cabinet dresser <span>vella</span> Frame</h5>
+										<div class="item-catalog__price">5 610 ₴</div>
+									</article>
+									<article class="content-goods__item item-catalog">
+										<a href="#" class="item-catalog__link">
+											<img class="item-catalog__image ibg" src="img/catalog/image_01.webp" alt="Image">
+										</a>
+										<h5 class="item-catalog__title">Cabinet dresser <span>vella</span> Frame</h5>
+										<div class="item-catalog__price">5 610 ₴</div>
+									</article>
+								</div>
+								<button hidden data-showmore-button type="button" class="goods__button-more button-more _icon-clockwise">
+									<span>Show more</span>
+									<span>Less</span>
+								</button>
+							</div>
+							<div class="goods__pages pages-goods">
+								<a href="#" class="pages-goods__prev-link _icon-chevron-left"></a>
+								<ul class="pages-goods__list">
+									<li class="pages-goods__item">
+										<a href="#" class="pages-goods__link">1</a>
+									</li>
+									<li class="pages-goods__item">
+										<a href="#" class="pages-goods__link">2</a>
+									</li>
+									<li class="pages-goods__item">
+										<a href="#" class="pages-goods__link">3</a>
+									</li>
+									<li class="pages-goods__item">
+										<a href="#" class="pages-goods__link">...</a>
+									</li>
+									<li class="pages-goods__item">
+										<a href="#" class="pages-goods__link">34</a>
+									</li>
+								</ul>
+								<a href="#" class="pages-goods__next-link _icon-chevron-left"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrap">
+					<div class="footer__top top-footer">
+						<a href="#" data-goto=".header" class="top-footer__logo logo"><img src="img/updated_logo.svg" alt="Logo"></a>
+						<div class="top-footer__menu menu-footer">
+							<div class="menu-footer__body">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="catalog.html#catalog" class="menu-footer__link">
+											Catalog
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="collaboration.html#collaboration" class="menu-footer__link">
+											Partners
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="design.html#design" class="menu-footer__link">
+											Designers
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="about.html#about" class="menu-footer__link">
+											About Us
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="schemes.html#schemes" class="menu-footer__link">
+											Assembly scheme
+										</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="contacts.html#contacts" class="menu-footer__link">
+											Contacts
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="top-footer__contact contact-footer">
+							<a href="tel:+380955770304" class="contact-footer__link">
+								<p>+380 95 577 03 04</p>
+								<span class="contact-footer__icon">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#tablet"></use>
+									</svg>
+								</span>
+							</a>
+							<div class="contact-footer__schedule">Daily with 10:00 to 10:00 pm</div>
+							<button data-popup="#popup" type="button" class="contact-footer__button button button--trprnt">Become a dealer</button>
+						</div>
+					</div>
+					<div class="footer__bottom bottom-footer">
+						<div class="bottom-footer__body">
+							<div class="bottom-footer__text">
+								<p>
+									©All rights are protected <time datetime="2010">2010</time>-<time datetime="2024">2024</time>
+								</p>
+							</div>
+							<div data-da=".contact-footer, 767.98,last" class="bottom-footer__market market-footer">
+								<div class="item-connection__text">
+									<p>
+										We are on marketplaces
+									</p>
+								</div>
+								<ul class="market-footer__list">
+									<li class="market-footer__item">
+										<a href="#" class="market-footer__link">
+											<img class="market-footer__image ibg" src="img/footer/wildb.webp" alt="Image">
+										</a>
+									</li>
+									<li class="market-footer__item">
+										<a href="#" class="market-footer__link">
+											<img class="market-footer__image ibg" src="img/footer/ozon.webp" alt="Image">
+										</a>
+									</li>
+									<li class="market-footer__item">
+										<a href="#" class="market-footer__link">
+											<img class="market-footer__image ibg" src="img/footer/market.webp" alt="Image">
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+				<style>
+					* {
+						padding: 0px;
+						margin: 0px;
+						border: 0px;
+						box-sizing: border-box;
+					}
+					/* Головний блок */
+					.fls-preloader{
+						pointer-events: none;
+						z-index: -1;
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						justify-content:center;
+						align-items: center;
+					}
+					/* Блок з елементами */
+					.fls-preloader__body{
+						padding: 0.93rem;
+						max-width: 31.25rem;
+						display: flex;
+						flex-direction: column;
+					}
+					/* Блок з лічильником */
+					.fls-preloader__counter{
+						font-size: 10rem;
+						color:#FFBC57;
+					}
+					/* Прогресбар */
+					.fls-preloader__line{}
+					/* Лінія прогресбару */
+					.fls-preloader__line span{
+						display: inline-block;
+						transition: width 0.2s ease;
+						height: 0.8rem;
+						background-color: #FFBC57;
+					}
+					.lock body{
+						overflow: hidden;
+						touch-action: none;
+						overscroll-behavior: none;
+					}
+					.loading body>*:not(.fls-preloader){
+						opacity: 0;
+						visibility: hidden;
+					}
+					.loaded body>*:not(.fls-preloader){
+						transition: opacity 0.5s ease 0s;
+						opacity: 1;
+						visibility: visible;
+					}
+				</style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path d="M15.625 4.375L4.375 15.625" stroke="#BFBFBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M15.625 15.625L4.375 4.375" stroke="#BFBFBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<article class="popup__form window-form window-form--popup">
+					<div class="window-form__body window-form__body--popup">
+						<div class="window-form__roof window-form__roof--popup">
+							<h3 class="window-form__title window-form__title--popup">Become a dealer</h3>
+							<div class="window-form__subtitle window-form__subtitle--popup">
+								<p>
+									Leave a request, we will contact you to discuss the details of cooperation
+								</p>
+							</div>
+						</div>
+						<form class="window-form__contact form form--fbd" action="https://jkorpela.fi/cgi-bin/echo.cgi" enctype="multipart/form-data" data-netlify="true">
+							<div class="form__line form__line--fbd">
+								<input autocomplete="off" type="text" name="form[name]" data-error="Error" placeholder="Your name" class="form__input input input--wn">
+							</div>
+							<div class="form__line form__line--fbd">
+								<input autocomplete="off" type="tel" name="form[phone]" data-error="Error" placeholder="Phone number" class="form__input input input--wn">
+							</div>
+							<button class="form__button form__button--fbd button button--popup" type="submit">
+								Send
+								<svg class="button__icon">
+									<use xlink:href="img/icons/icons.svg#arrow-narrow-right"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="popup-price" aria-hidden="true" class="popup popup-price">
+		<div class="popup__wrapper popup-price__wrapper">
+			<div class="popup__content popup-price__content">
+				<button data-close type="button" class="popup-price__close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+						<path d="M15.625 4.375L4.375 15.625" stroke="#BFBFBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M15.625 15.625L4.375 4.375" stroke="#BFBFBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+
+				<article class="popup-price__form window-form window-form--popup">
+					<div class="window-form__body window-form__body--popup">
+						<div class="window-form__roof window-form__roof--popup">
+							<h3 class="window-form__title window-form__title--popup">Get a price list</h3>
+
+						</div>
+						<form class="window-form__contact form form--fbd" action="https://jkorpela.fi/cgi-bin/echo.cgi" enctype="multipart/form-data" data-netlify="true">
+							<div class="form__line form__line--fbd">
+								<input autocomplete="off" type="tel" name="form[phone]" data-error="Error" placeholder="Phone number" class="form__input input input--wn">
+							</div>
+							<button class="form__button form__button--fbd button button--popup" type="submit">
+								Send
+								<svg class="button__icon">
+									<use xlink:href="img/icons/icons.svg#arrow-narrow-right"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20251028103505"></script>
+</body>
+
+</html>
