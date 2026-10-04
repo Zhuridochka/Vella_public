@@ -5,5 +5,7 @@ It combines the use of many modern technologies, providing excellent custom expe
 
 Technologies used:
 SCSS: SCSS stylization that allows you to use variables, mixes and attachments for convenience in maintaining styles.
+
 JavaScript: Site interactivity and dynamics, including animations, filters and preloaders.
+
 Without third-party libraries: Most of the functionality is developed manually without the use of third -party libraries and frameworks, demonstrating high skills in development.
