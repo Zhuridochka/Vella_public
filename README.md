@@ -8,6 +8,7 @@ It combines the use of many modern technologies, providing excellent custom expe
 | Desktop | Mobile |
 |---|---|
 | ![Desktop](./previews/Screenshot_142753_desktop.jpg) | ![Mobile](./previews/Screenshot_142753_mobile.jpg) 
+| ![Desktop](./previews/Screenshot_142910_desktop.jpg) | ![Mobile](previews/Screenshot_142910_mobile.jpg) 
 
 ## Technologies used:
   - SCSS stylization that allows you to use variables, mixes and attachments for convenience in maintaining styles.
