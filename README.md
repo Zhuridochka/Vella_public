@@ -3,6 +3,9 @@ It combines the use of many modern technologies, providing excellent custom expe
 
 🔗 **Demo:** https://zhuridochka.github.io/Vella_public/design.html#design
 
+## Screenshots
+![Desktop] (./)
+
 Technologies used:
   - SCSS stylization that allows you to use variables, mixes and attachments for convenience in maintaining styles.
 
